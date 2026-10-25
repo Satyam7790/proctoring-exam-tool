@@ -48,6 +48,7 @@
     "mac": {
       "category": "public.app-category.education",
       "target": [
+        "dmg",
         "zip"
       ]
     },
