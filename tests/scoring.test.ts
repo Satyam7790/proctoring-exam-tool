@@ -17,3 +17,4 @@ test('does not award points for blank or zero-weight answers', () => {
   assert.equal(scoreObjectiveAnswer(null, 'x', 5), 0);
   assert.equal(scoreObjectiveAnswer('x', 'x', 0), 0);
 });
+// check file 
