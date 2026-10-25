@@ -1,0 +1,10 @@
+node_modules/
+server/generated/
+out/
+release/
+artifacts/
+dist/
+.env
+.env.*
+!.env.example
+*.log
