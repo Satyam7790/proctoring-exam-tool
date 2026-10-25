@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "electron-vite dev",
     "build": "electron-vite build && tsc --noEmit -p tsconfig.json",
+    "build:web": "vite build --config vite.web.config.ts",
     "dist": "npm run build && electron-builder",
     "start": "electron .",
     "test": "tsx --test tests/scoring.test.ts",

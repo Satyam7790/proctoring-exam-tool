@@ -11,7 +11,11 @@ npm install
 npm run dev
 ```
 
-Create a distributable for the current computer with `npm run dist`. On Apple Silicon macOS this produces an arm64 ZIP under `artifacts/`. `npm run build` builds the app and checks its TypeScript. `npm test` runs the scoring checks.
+Create a distributable for the current computer with `npm run dist`. On Apple Silicon macOS this produces an arm64 `.dmg` and `.zip` under `artifacts/`. `npm run build` builds the app and checks its TypeScript. `npm test` runs the scoring checks.
+
+## Publish a browser preview on Vercel
+
+This repository includes `vercel.json` and `npm run build:web` for a static browser preview. Push the project to GitHub, import the repository in Vercel, and deploy with the default settings. The build command is `npm run build:web`; the output directory is `dist/web`; no environment variables are needed. Vercel will provide a shareable HTTPS URL. This URL hosts the React preview, not the Electron desktop app. The macOS `.dmg` remains a separate download under `artifacts/` and should be distributed through a release or file-hosting service.
 
 ## Demo workflow
 
